@@ -1,0 +1,168 @@
+    
+
+.frame{
+
+    display:flex; /* 讓下一層次的項目水平置中 */
+    font-size: 20px;
+    font-weight:bold;
+    background-color:gray;
+}
+.left{
+
+    flex: none;/* 固定配置 */
+    width: 100px;;
+    text-align: center;/* 項目的文字置中 */
+
+}
+.right{
+
+    flex: auto; /* 自動把剩下空間填滿 */
+    display:flex; 
+    justify-content: flex-end;/* 讓下一層次的項目水平靠右 */
+    
+}
+
+.item{
+ 
+    flex: none;/* 固定配置 */
+    width: 100px;/* 固定寬度 */
+    margin-right: 10px;/* 每個項目右邊給他10px的空間 */
+    text-align: center;/* 項目的文字置中 */
+    
+}
+.welcome{/* welcome外區塊 */
+
+    /* 完美置中(水平垂直置中) */  
+    display: flex;/* 讓下一層次的項目水平排列 */
+    justify-content: center;/* 左右排列置中 */
+    align-items: center;/* 上下排列置中 */
+
+    height:300px;
+    background-color: black;
+}
+.text{ /* welcome文字部分內區塊 */
+
+    text-align:center ;/* 文字區塊置中 */
+    font-size:40px;/* 2倍大 */
+    font-weight:bold;
+    color: white;
+    
+}
+.main{
+    flex: none;/* 固定配置 */
+    /* 完美置中(水平垂直置中) */  
+    justify-content: center;/* 左右排列置中 */
+    align-items: center;/* 上下排列置中 */ 
+    width:1200px;
+   
+    
+
+}
+.list{
+    /* 完美置中(水平垂直置中) */  
+    display: flex;/* 讓下一層次的項目水平排列 */
+    justify-content: center;/* 左右排列置中 */
+    align-items: center;/* 上下排列置中 */    
+    margin-top: 10px;
+    color:white;
+    
+}
+.listItem{
+    display: flex;/* 讓下一層次的項目水平排列 */
+    justify-content: flex-start;/* 讓下一層次的項目水平靠左 */
+    align-items: center;/* 上下排列置中 */ 
+    flex:auto;/* 自動把剩下空間填滿 */
+    width: 50% 50%;  /*580px*/
+    height:50px;
+    margin: 10px;
+    background-color: black;
+}
+.listItemtext{
+    margin: 10px;
+    color:white;
+}
+
+.Sublist1{
+    /* 完美置中(水平垂直置中) */  
+    display: flex;/* 讓下一層次的項目水平排列 */
+    justify-content: center;/* 左右排列置中 */
+    align-items: center;/* 上下排列置中 */   
+    flex:none;
+}
+.Sublist2{
+    /* 完美置中(水平垂直置中) */  
+    display: flex;/* 讓下一層次的項目水平排列 */
+    justify-content: center;/* 左右排列置中 */
+    align-items: center;/* 上下排列置中 */  
+    flex:none;
+}
+.SublistItem{
+    flex:none;
+    margin: 10px;
+    background-color: black;
+    width: 25% 25% 25% 25%;  /*280px*/
+    height: auto;   
+}
+
+.SublistItem img{
+    justify-content: center;/* 左右排列置中 */
+    align-items: flex-start;/* 上下排列置上 */
+    flex:none;
+    width: 280px; 
+    height: 250px; 
+    
+}
+
+
+.SublistItemtext{
+    width: 280px; 
+    margin: auto;
+    height: auto;
+/* 單一區塊只有文字就不用用到flex，只需置中文字 */
+    text-align: center;/* 項目的文字置中 */
+    color:white;
+}
+
+
+/* RWD */
+/* 順序很重要不能隨意變更 */
+
+/* 桌機 */
+@media (max-width:1250px){
+  
+    .list{
+        flex-wrap: wrap;
+    }
+    .listItem{
+        width: 45%;
+    }
+    .Sublist1{
+        flex-wrap: wrap;
+    }
+    .SublistItem{
+        width: 45%;
+    }
+    .Sublist2{
+        flex-wrap: wrap;
+    }
+    .SublistItem{
+        width: 45%;
+    }
+    
+}
+   
+    
+/* 手機 */
+@media (max-width:500px){
+   
+    .listItem{
+        width: 90%;
+    }
+    .SublistItem{
+        width: 90%;
+    }
+    
+} 
+
+
+

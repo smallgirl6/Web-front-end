@@ -1,0 +1,31 @@
+@media (max-width:1250px){
+  
+    .list{
+        flex-wrap: wrap;
+    }
+    .pro{
+        width: 45%;
+    }
+}
+
+@media (max-width:500px){
+  
+    .list{
+        flex-wrap: wrap;
+    }
+    .pro{
+        width: 90%;
+    }
+}
+.list{
+        /* 完美置中(水平垂直置中) */  
+        display: flex;/* 讓下一層次的項目水平排列 */
+        justify-content: center;
+        
+} 
+.pro{
+    flex:none;
+    width: 280px;
+    margin:10px;
+    background-color: aquamarine;
+}   
