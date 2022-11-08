@@ -1,13 +1,14 @@
 
 body {
     margin: 0px auto;   /*緊貼頂部(上下左右)，沒有空隙*/
-    }   
-
+	
+}   
 .frame{
     display:flex; /* 讓下一層次的項目水平置中 */
     font-size: 20px;
     font-weight:bold;
     background-color:gray;
+	
 }
 .left{
     flex: none;/* 固定配置 */
@@ -15,7 +16,6 @@ body {
     text-align: center;/* 項目的文字置中 */
     
 }
-
 .right{  
     display:flex; 
     justify-content: flex-end;/* 讓下一層次的項目水平靠右 */
@@ -27,12 +27,12 @@ body {
     display: none;  /* 手機版先隱藏 */ 
     flex: auto; /* 自動把剩下空間填滿 */ 
     text-align:right;/* 圖片置右 */
+	
 }
-
 .mobile-menu img{
 	vertical-align: middle; /* 讓照片垂直置中 */
+	
 }
-
 .item{   
     flex: none;/*固定配置*/
     width: 100px;/* 固定寬度 */
@@ -48,6 +48,7 @@ body {
     align-items: center;/* 上下排列置中 */
     height:300px;
     background-color: black;
+	
 }
 .text{ /* welcome文字部分內區塊 */
 
@@ -64,7 +65,6 @@ body {
     width:1200px;
     margin:auto;  /*自動平分區塊，沒加這行都會一直跑到左邊 */
  
-
 }
 .list{
     display: flex;/* 讓下一層次的項目水平排列 */ 
@@ -81,10 +81,12 @@ body {
     background-color: black;
     height:50px;
     margin: 10px;
+	
 }
 .listItemtext{
     margin: 10px;
     color:white;
+	
 }
 .Sublist{
     justify-content: center;/* 左右排列置中 */
@@ -94,6 +96,7 @@ body {
     grid-row-gap:10px;/*每行間距 */
     grid-column-gap:10px;/*每列間距 */    
     margin: 10px;
+	
 }
 .pic{
     justify-content: center;/* 左右排列置中 */
@@ -108,8 +111,8 @@ body {
     
     width:100%;  /* 瑱滿pic格 */
     height:100%;      
+	
 }
-
 .star{
     position:absolute;
     width:10%;  /* 寬的1/10 */
@@ -117,6 +120,7 @@ body {
     z-index:2; /* 壓在最中間 */
     right:0;   /* 最右邊 */
     top:0;    /* 最上面 */
+	
 }
 
 .SublistItemtext{
